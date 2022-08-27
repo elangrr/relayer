@@ -1,10 +1,9 @@
-sudo tee $HOME/.relayer/chains/gaia.json > /dev/null <<EOF
 {
   "type": "cosmos",
   "value": {
     "key": "wallet",
     "chain-id": "GAIA",
-    "rpc-addr": "http://${GAIA_RPC_ADDR}",
+    "rpc-addr": "http://127.0.0.1:23657",
     "account-prefix": "cosmos",
     "keyring-backend": "test",
     "gas-adjustment": 1.2,
@@ -16,4 +15,3 @@ sudo tee $HOME/.relayer/chains/gaia.json > /dev/null <<EOF
     "sign-mode": "direct"
   }
 }
-EOF
